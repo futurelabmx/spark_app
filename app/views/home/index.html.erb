@@ -1,4 +1,3 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-<%= response["response"] %>
+<% response = HTTParty.get('https://maps.googleapis.com/maps/api/directions/json?origin=20.978216,-101.69591&destination=20.981249,-101.69023&language=es_MX&key=AIzaSyCpHskh5Sxh5Ku48bFzj456T3fyVw71z94') %>
+<%= response["routes"][0]["legs"][0]["duration"]["text"] %>

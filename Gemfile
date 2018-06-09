@@ -82,3 +82,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator', '~> 6.0', '>= 6.0.1'
 gem 'httparty', '~> 0.16.2'
 gem 'twilio-ruby', '~> 5.10.3'
+gem "font-awesome-rails"

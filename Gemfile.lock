@@ -124,6 +124,8 @@ GEM
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
+    font-awesome-rails (4.7.0.4)
+      railties (>= 3.2, < 6.0)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     foreman (0.84.0)
@@ -336,6 +338,7 @@ DEPENDENCIES
   devise (~> 4.4.3)
   devise-bootstrapped!
   devise_masquerade (~> 0.6.0)
+  font-awesome-rails
   font-awesome-sass (~> 4.7)
   foreman (~> 0.84.0)
   friendly_id (~> 5.1.0)
