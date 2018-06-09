@@ -1,0 +1,23 @@
+<div class="page-header">
+  <%= link_to payments_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    All Payments
+  <% end %>
+  <%= link_to edit_payment_path(@payment), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show payment</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Time:</dt>
+  <dd><%= @payment.time %></dd>
+
+  <dt>Amount:</dt>
+  <dd><%= @payment.amount %></dd>
+
+  <dt>Location:</dt>
+  <dd><%= @payment.location %></dd>
+
+</dl>
