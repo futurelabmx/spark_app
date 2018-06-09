@@ -2,6 +2,7 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
   resources :payments
+  resource :subscription
   namespace :admin do
       resources :users
       resources :announcements
