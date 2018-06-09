@@ -19,7 +19,7 @@ class SubscriptionsController < ApplicationController
         customer: customer
       )
 
-
+    flash[:notice] = "Cargo por #{amount/100} MXN realizado con éxito!"
     redirect_to :root
   end
 
