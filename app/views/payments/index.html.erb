@@ -58,3 +58,22 @@
     </tbody>
   </table>
 </div>
+
+<h1 id="bigOne"></h1>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBFzy_9xIwQDzjyFj751Clk_DMCUvSo_G4",
+    authDomain: "spark-5bb2f.firebaseapp.com",
+    databaseURL: "https://spark-5bb2f.firebaseio.com",
+    projectId: "spark-5bb2f",
+    storageBucket: "spark-5bb2f.appspot.com",
+    messagingSenderId: "412757908317"
+  };
+  firebase.initializeApp(config);
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref().child('text');
+  dbRef.on('value', snap => bigOne.innerText = snap.val());
+</script>
