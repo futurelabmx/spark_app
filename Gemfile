@@ -80,7 +80,7 @@ gem 'omniauth-github', '~> 1.3'
 gem 'whenever', require: false
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator', '~> 6.0', '>= 6.0.1'
-gem 'httparty', '~> 0.16.2'
+gem 'httparty', '~> 0.21.0'
 gem 'twilio-ruby', '~> 5.10.3'
 gem "font-awesome-rails"
 gem 'stripe', '~> 3.15'
